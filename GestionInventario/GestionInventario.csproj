@@ -9,6 +9,58 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net8.0-windows\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0-windows\GestionInventario.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0-windows\GestionInventario.deps.json" />
+    <Content Include="bin\Debug\net8.0-windows\GestionInventario.runtimeconfig.json" />
+    <Content Include="obj\Debug\net8.0-windows\GestionInventario.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0-windows\GestionInventario.designer.deps.json" />
+    <Content Include="obj\Debug\net8.0-windows\GestionInventario.designer.runtimeconfig.json" />
+    <Content Include="obj\GestionInventario.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0-windows\GestionInventario.dll" />
+    <None Include="bin\Debug\net8.0-windows\GestionInventario.exe" />
+    <None Include="bin\Debug\net8.0-windows\GestionInventario.pdb" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Application.dll" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Application.pdb" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Domain.dll" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Domain.pdb" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Infrastructure.dll" />
+    <None Include="bin\Debug\net8.0-windows\GestorInventario.Infrastructure.pdb" />
+    <None Include="bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll" />
+    <None Include="bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="obj\Debug\net8.0-windows\apphost.exe" />
+    <None Include="obj\Debug\net8.0-windows\GestionI.14355B1F.Up2Date" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.assets.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.dll" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.Form1.resources" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.pdb" />
+    <None Include="obj\Debug\net8.0-windows\GestionInventario.Properties.Resources.resources" />
+    <None Include="obj\Debug\net8.0-windows\refint\GestionInventario.dll" />
+    <None Include="obj\Debug\net8.0-windows\ref\GestionInventario.dll" />
+    <None Include="obj\GestionInventario.csproj.nuget.g.props" />
+    <None Include="obj\GestionInventario.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.10" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.4" />
   </ItemGroup>
@@ -26,7 +78,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <Folder Include="Forms\Movimientos\" />
+    <Folder Include="Forms\Productos\" />
+    <Folder Include="Forms\Stock\" />
+    <Folder Include="Forms\Usuarios\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>
