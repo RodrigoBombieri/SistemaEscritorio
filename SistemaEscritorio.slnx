@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="GestionInventario/GestionInventario.csproj" Id="a422725e-8233-4fc8-8d92-270761dbbb59" />
+  <Project Path="GestorInventario.Application/GestorInventario.Application.csproj" />
+  <Project Path="GestorInventario.Domain/GestorInventario.Domain.csproj" />
+  <Project Path="GestorInventario.Infrastructure/GestorInventario.Infrastructure.csproj" />
+</Solution>
