@@ -11,10 +11,4 @@
     <ProjectReference Include="..\GestorInventario.Domain\GestorInventario.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

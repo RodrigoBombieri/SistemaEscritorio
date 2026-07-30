@@ -10,8 +10,4 @@
     <ProjectReference Include="..\GestorInventario.Domain\GestorInventario.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>

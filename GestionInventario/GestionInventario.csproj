@@ -77,12 +77,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Forms\Movimientos\" />
-    <Folder Include="Forms\Productos\" />
-    <Folder Include="Forms\Stock\" />
-    <Folder Include="Forms\Usuarios\" />
-    <Folder Include="Helpers\" />
-  </ItemGroup>
-
 </Project>
