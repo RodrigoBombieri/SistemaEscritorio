@@ -69,6 +69,7 @@
             btnCerrarSesion.TabIndex = 2;
             btnCerrarSesion.Text = "Cerrar Sesión";
             btnCerrarSesion.UseVisualStyleBackColor = true;
+            btnCerrarSesion.Click += btnCerrarSesion_Click;
             // 
             // lblUsuario
             // 
@@ -123,6 +124,7 @@
             btnProductos.Text = "Productos";
             btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnProductos.UseVisualStyleBackColor = true;
+            btnProductos.Click += btnProductos_Click;
             // 
             // btnCategorias
             // 
@@ -197,7 +199,7 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new System.Drawing.Size(362, 20);
+            toolStripStatusLabel1.Size = new System.Drawing.Size(401, 20);
             toolStripStatusLabel1.Spring = true;
             // 
             // tsslVersion
@@ -218,6 +220,7 @@
             Name = "MainForm";
             Text = "Gestión de Inventario";
             WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            Load += MainForm_Load_1;
             panelTop.ResumeLayout(false);
             panelTop.PerformLayout();
             panelMenu.ResumeLayout(false);

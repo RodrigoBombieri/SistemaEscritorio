@@ -1,4 +1,5 @@
-﻿using GestionInventario.Helpers;
+﻿using GestionInventario.Forms.Productos;
+using GestionInventario.Helpers;
 using GestorInventario.Domain.Enums;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -27,7 +28,7 @@ namespace GestionInventario
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
-            => MessageBox.Show("Pantalla de Productos: próximo paso.");
+            => AbrirFormularioHijo<ProductosForm>();
 
         private void btnCategorias_Click(object sender, EventArgs e)
             => MessageBox.Show("Pantalla de Categorías: próximo paso.");
@@ -47,7 +48,10 @@ namespace GestionInventario
             Application.Restart();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e) => Close();
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
 
         // Cuando construyamos cada pantalla, reemplazamos el MessageBox de arriba por:
         // AbrirFormularioHijo<Forms.Productos.ProductosForm>();
