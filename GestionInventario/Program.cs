@@ -1,11 +1,13 @@
-﻿using System;
-using System.Configuration;
-using System.Windows.Forms;
+﻿using GestorInventario.Application.Interfaces;
+using GestorInventario.Application.Services;
 using GestorInventario.Domain.Interfaces;
 using GestorInventario.Infrastructure.Data;
 using GestorInventario.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Configuration;
+using System.Windows.Forms;
 
 namespace GestionInventario
 {
@@ -29,6 +31,15 @@ namespace GestionInventario
             services.AddScoped<IProveedorRepository, ProveedorRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IMovimientoStockRepository, MovimientoStockRepository>();
+
+            // Servicios
+            services.AddScoped<IProductoService, ProductoService>();
+            services.AddScoped<ICategoriaService, CategoriaService>();
+            services.AddScoped<IProveedorService, ProveedorService>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IStockService, StockService>();
+
+
             // Formularios
             services.AddScoped<Form1>();
 
