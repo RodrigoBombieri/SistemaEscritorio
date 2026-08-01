@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Forms.Login;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Application.Services;
 using GestorInventario.Domain.Interfaces;
 using GestorInventario.Infrastructure.Data;
@@ -41,10 +42,15 @@ namespace GestionInventario
 
 
             // Formularios
+            services.AddScoped<LoginForm>();
             services.AddScoped<Form1>();
 
             using var provider = services.BuildServiceProvider();
             using var scope = provider.CreateScope();
+            // Mostrar el formulario de login antes de iniciar la aplicación principal
+            var loginForm = scope.ServiceProvider.GetRequiredService<LoginForm>();
+            if (loginForm.ShowDialog() != DialogResult.OK)
+                return; // canceló o cerró la ventana sin loguearse
 
             var mainForm = scope.ServiceProvider.GetRequiredService<Form1>();
             Application.Run(mainForm);
