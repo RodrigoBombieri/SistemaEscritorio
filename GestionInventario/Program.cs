@@ -42,17 +42,19 @@ namespace GestionInventario
 
 
             // Formularios
+            services.AddSingleton<MainForm>();
             services.AddScoped<LoginForm>();
-            services.AddScoped<Form1>();
 
             using var provider = services.BuildServiceProvider();
-            using var scope = provider.CreateScope();
-            // Mostrar el formulario de login antes de iniciar la aplicación principal
-            var loginForm = scope.ServiceProvider.GetRequiredService<LoginForm>();
-            if (loginForm.ShowDialog() != DialogResult.OK)
-                return; // canceló o cerró la ventana sin loguearse
-
-            var mainForm = scope.ServiceProvider.GetRequiredService<Form1>();
+            // Mostrar el formulario de inicio de sesión antes de abrir el formulario principal
+            using (var loginScope = provider.CreateScope())
+            {
+                var loginForm = loginScope.ServiceProvider.GetRequiredService<LoginForm>();
+                if (loginForm.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+            // Abrir el formulario principal después de un inicio de sesión exitoso
+            var mainForm = provider.GetRequiredService<MainForm>();
             Application.Run(mainForm);
         }
     }

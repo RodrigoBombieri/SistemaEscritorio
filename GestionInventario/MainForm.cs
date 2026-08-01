@@ -1,0 +1,64 @@
+﻿using GestionInventario.Helpers;
+using GestorInventario.Domain.Enums;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Windows.Forms;
+
+namespace GestionInventario
+{
+    public partial class MainForm : Form
+    {
+        private readonly IServiceScopeFactory _scopeFactory;
+
+        public MainForm(IServiceScopeFactory scopeFactory)
+        {
+            InitializeComponent();
+            _scopeFactory = scopeFactory;
+            Load += MainForm_Load;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            var usuario = SesionActual.UsuarioActual;
+            lblUsuario.Text = $"{usuario.NombreCompleto} · {usuario.Rol}";
+            tsslUsuario.Text = $"Conectado como {usuario.NombreCompleto} ({usuario.Rol})";
+
+            btnUsuarios.Visible = usuario.Rol == RolUsuario.Administrador;
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+            => MessageBox.Show("Pantalla de Productos: próximo paso.");
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+            => MessageBox.Show("Pantalla de Categorías: próximo paso.");
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+            => MessageBox.Show("Pantalla de Proveedores: próximo paso.");
+
+        private void btnMovimientos_Click(object sender, EventArgs e)
+            => MessageBox.Show("Pantalla de Movimientos: próximo paso.");
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+            => MessageBox.Show("Pantalla de Usuarios: próximo paso.");
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            SesionActual.CerrarSesion();
+            Application.Restart();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e) => Close();
+
+        // Cuando construyamos cada pantalla, reemplazamos el MessageBox de arriba por:
+        // AbrirFormularioHijo<Forms.Productos.ProductosForm>();
+        private void AbrirFormularioHijo<TForm>() where TForm : Form
+        {
+            var scope = _scopeFactory.CreateScope();
+            var form = scope.ServiceProvider.GetRequiredService<TForm>();
+
+            form.MdiParent = this;
+            form.FormClosed += (s, e) => scope.Dispose();
+            form.Show();
+        }
+    }
+}
