@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using GestionInventario.Helpers;
 using GestorInventario.Application.Interfaces;
-using System;
 using System.Windows.Forms;
 
 namespace GestionInventario.Forms.Login

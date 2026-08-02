@@ -171,6 +171,7 @@
             btnUsuarios.Text = "Usuarios";
             btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
             // 
             // btnSalir
             // 

@@ -1,6 +1,7 @@
 ﻿using GestionInventario.Forms.Categorias;
 using GestionInventario.Forms.Productos;
 using GestionInventario.Forms.Proveedores;
+using GestionInventario.Forms.Usuarios;
 using GestionInventario.Helpers;
 using GestorInventario.Domain.Enums;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,7 +43,7 @@ namespace GestionInventario
             => MessageBox.Show("Pantalla de Movimientos: próximo paso.");
 
         private void btnUsuarios_Click(object sender, EventArgs e)
-            => MessageBox.Show("Pantalla de Usuarios: próximo paso.");
+            => AbrirFormularioHijo<UsuariosForm>();
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {

@@ -146,6 +146,7 @@ namespace GestionInventario.Forms.Proveedores
         }
 
         private void btnCerrar_Click(object sender, EventArgs e) => Close();
+        private async void chkSoloActivos_CheckedChanged(object sender, EventArgs e) => await CargarProveedoresAsync();
 
     }
 }

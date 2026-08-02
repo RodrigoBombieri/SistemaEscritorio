@@ -176,6 +176,7 @@
             dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             dgvProveedores.Size = new System.Drawing.Size(984, 355);
             dgvProveedores.TabIndex = 1;
+            dgvProveedores.Click += chkSoloActivos_CheckedChanged;
             // 
             // colRazonSocial
             // 
