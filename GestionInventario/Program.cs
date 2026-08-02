@@ -1,4 +1,5 @@
-﻿using GestionInventario.Forms.Login;
+﻿using GestionInventario.Forms.Categorias;
+using GestionInventario.Forms.Login;
 using GestionInventario.Forms.Productos;
 using GestorInventario.Application.Interfaces;
 using GestorInventario.Application.Services;
@@ -47,6 +48,8 @@ namespace GestionInventario
             services.AddScoped<LoginForm>();
             services.AddScoped<ProductosForm>();
             services.AddScoped<ProductoEditForm>();
+            services.AddScoped<CategoriasForm>();
+            services.AddScoped<CategoriaEditForm>();
 
             using var provider = services.BuildServiceProvider();
             // Mostrar el formulario de inicio de sesión antes de abrir el formulario principal

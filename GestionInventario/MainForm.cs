@@ -1,4 +1,5 @@
-﻿using GestionInventario.Forms.Productos;
+﻿using GestionInventario.Forms.Categorias;
+using GestionInventario.Forms.Productos;
 using GestionInventario.Helpers;
 using GestorInventario.Domain.Enums;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,7 +32,7 @@ namespace GestionInventario
             => AbrirFormularioHijo<ProductosForm>();
 
         private void btnCategorias_Click(object sender, EventArgs e)
-            => MessageBox.Show("Pantalla de Categorías: próximo paso.");
+            => AbrirFormularioHijo<CategoriasForm>();
 
         private void btnProveedores_Click(object sender, EventArgs e)
             => MessageBox.Show("Pantalla de Proveedores: próximo paso.");
