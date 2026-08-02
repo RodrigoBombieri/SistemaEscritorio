@@ -19,6 +19,7 @@ namespace GestionInventario.Forms.Login
         public LoginForm(IUsuarioService usuarioService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _usuarioService = usuarioService;
         }
 
@@ -58,6 +59,11 @@ namespace GestionInventario.Forms.Login
             {
                 btnIngresar.Enabled = true;
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

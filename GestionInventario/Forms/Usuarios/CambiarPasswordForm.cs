@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Enums;
 using Microsoft.Data.SqlClient;
 using System;
@@ -16,6 +17,7 @@ namespace GestionInventario.Forms.Usuarios
         public CambiarPasswordForm(IUsuarioService usuarioService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _usuarioService = usuarioService;
             Load += CambiarPasswordForm_Load;
         }

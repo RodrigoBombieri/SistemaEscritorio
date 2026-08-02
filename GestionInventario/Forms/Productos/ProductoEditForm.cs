@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using Microsoft.Data.SqlClient;
 using System;
@@ -22,6 +23,7 @@ namespace GestionInventario.Forms.Productos
             IProveedorService proveedorService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _productoService = productoService;
             _categoriaService = categoriaService;
             _proveedorService = proveedorService;

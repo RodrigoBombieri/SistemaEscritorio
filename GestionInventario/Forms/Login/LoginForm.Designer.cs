@@ -40,21 +40,21 @@
             // 
             txtUsuario.Location = new System.Drawing.Point(325, 160);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new System.Drawing.Size(125, 27);
+            txtUsuario.Size = new System.Drawing.Size(130, 27);
             txtUsuario.TabIndex = 0;
             // 
             // txtPassword
             // 
             txtPassword.Location = new System.Drawing.Point(325, 207);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new System.Drawing.Size(125, 27);
+            txtPassword.Size = new System.Drawing.Size(130, 27);
             txtPassword.TabIndex = 1;
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new System.Drawing.Point(339, 265);
+            btnIngresar.Location = new System.Drawing.Point(320, 262);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new System.Drawing.Size(94, 29);
+            btnIngresar.Size = new System.Drawing.Size(135, 55);
             btnIngresar.TabIndex = 2;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@
             // 
             lblError.AutoSize = true;
             lblError.ForeColor = System.Drawing.Color.Red;
-            lblError.Location = new System.Drawing.Point(362, 323);
+            lblError.Location = new System.Drawing.Point(367, 334);
             lblError.Name = "lblError";
             lblError.Size = new System.Drawing.Size(41, 20);
             lblError.TabIndex = 3;
@@ -102,6 +102,7 @@
             Controls.Add(txtUsuario);
             Name = "LoginForm";
             Text = "LoginForm";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

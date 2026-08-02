@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -22,6 +23,7 @@ namespace GestionInventario.Forms.Proveedores
         public ProveedoresForm(IProveedorService proveedorService, IServiceScopeFactory scopeFactory)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioListado(this);
             _proveedorService = proveedorService;
             _scopeFactory = scopeFactory;
             Load += ProveedoresForm_Load;
@@ -58,6 +60,8 @@ namespace GestionInventario.Forms.Proveedores
                     dgvProveedores.Rows[idx].Tag = p;
                 }
 
+                dgvProveedores.ClearSelection();
+                dgvProveedores.CurrentCell = null;
             }
             catch (Exception ex)
             {

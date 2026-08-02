@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -27,6 +28,7 @@ namespace GestionInventario.Forms.Productos
             IServiceScopeFactory scopeFactory)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioListado(this);
             _productoService = productoService;
             _categoriaService = categoriaService;
             _proveedorService = proveedorService;
@@ -99,11 +101,13 @@ namespace GestionInventario.Forms.Productos
                     var fila = dgvProductos.Rows[idx];
                     fila.Tag = p;
 
-                    if (!p.Activo)
-                        fila.DefaultCellStyle.ForeColor = Color.Gray;
-                    else if (p.StockActual <= p.StockMinimo)
-                        fila.DefaultCellStyle.ForeColor = Color.Firebrick;
+                    UiStyler.ColorearFilaPorEstado(fila, p.Activo, p.StockActual <= p.StockMinimo);
                 }
+
+                // Sin esto, DataGridView deja la primera fila "current" y se pinta con
+                // el color de selección apenas termina de cargar.
+                dgvProductos.ClearSelection();
+                dgvProductos.CurrentCell = null;
             }
             finally
             {

@@ -35,9 +35,9 @@
             panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
-            //
+            // 
             // panelTop
-            //
+            // 
             panelTop.Controls.Add(btnRefrescar);
             panelTop.Controls.Add(chkSoloActivos);
             panelTop.Controls.Add(btnBuscar);
@@ -47,180 +47,184 @@
             panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             panelTop.Location = new System.Drawing.Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new System.Drawing.Size(984, 56);
+            panelTop.Size = new System.Drawing.Size(1077, 108);
             panelTop.TabIndex = 0;
-            //
+            // 
             // btnRefrescar
-            //
-            btnRefrescar.Location = new System.Drawing.Point(650, 16);
+            // 
+            btnRefrescar.Location = new System.Drawing.Point(843, 20);
             btnRefrescar.Name = "btnRefrescar";
-            btnRefrescar.Size = new System.Drawing.Size(100, 29);
+            btnRefrescar.Size = new System.Drawing.Size(135, 55);
             btnRefrescar.TabIndex = 4;
             btnRefrescar.Text = "Refrescar";
             btnRefrescar.UseVisualStyleBackColor = true;
             btnRefrescar.Click += btnRefrescar_Click;
-            //
+            // 
             // chkSoloActivos
-            //
+            // 
             chkSoloActivos.AutoSize = true;
             chkSoloActivos.Checked = true;
             chkSoloActivos.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkSoloActivos.Location = new System.Drawing.Point(500, 20);
+            chkSoloActivos.Location = new System.Drawing.Point(603, 35);
             chkSoloActivos.Name = "chkSoloActivos";
-            chkSoloActivos.Size = new System.Drawing.Size(110, 24);
+            chkSoloActivos.Size = new System.Drawing.Size(111, 24);
             chkSoloActivos.TabIndex = 3;
             chkSoloActivos.Text = "Solo activos";
             chkSoloActivos.UseVisualStyleBackColor = true;
             chkSoloActivos.CheckedChanged += chkSoloActivos_CheckedChanged;
-            //
+            // 
             // btnBuscar
-            //
-            btnBuscar.Location = new System.Drawing.Point(340, 16);
+            // 
+            btnBuscar.Location = new System.Drawing.Point(396, 16);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new System.Drawing.Size(75, 29);
+            btnBuscar.Size = new System.Drawing.Size(135, 55);
             btnBuscar.TabIndex = 2;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             btnBuscar.Click += btnBuscar_Click;
-            //
+            // 
             // txtBuscar
-            //
-            txtBuscar.Location = new System.Drawing.Point(180, 17);
+            // 
+            txtBuscar.Location = new System.Drawing.Point(214, 33);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new System.Drawing.Size(150, 27);
             txtBuscar.TabIndex = 1;
-            //
+            // 
             // lblBuscar
-            //
+            // 
             lblBuscar.AutoSize = true;
-            lblBuscar.Location = new System.Drawing.Point(120, 20);
+            lblBuscar.Location = new System.Drawing.Point(141, 35);
             lblBuscar.Name = "lblBuscar";
-            lblBuscar.Size = new System.Drawing.Size(58, 20);
+            lblBuscar.Size = new System.Drawing.Size(55, 20);
             lblBuscar.TabIndex = 0;
             lblBuscar.Text = "Buscar:";
-            //
+            // 
             // lblTitulo
-            //
+            // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblTitulo.Location = new System.Drawing.Point(16, 20);
+            lblTitulo.Location = new System.Drawing.Point(16, 33);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new System.Drawing.Size(80, 20);
+            lblTitulo.Size = new System.Drawing.Size(70, 20);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Usuarios";
-            //
+            // 
             // panelBottom
-            //
+            // 
             panelBottom.Controls.Add(btnCerrar);
             panelBottom.Controls.Add(btnDesactivar);
             panelBottom.Controls.Add(btnCambiarPassword);
             panelBottom.Controls.Add(btnEditar);
             panelBottom.Controls.Add(btnNuevo);
             panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panelBottom.Location = new System.Drawing.Point(0, 411);
+            panelBottom.Location = new System.Drawing.Point(0, 473);
             panelBottom.Name = "panelBottom";
-            panelBottom.Size = new System.Drawing.Size(984, 50);
+            panelBottom.Size = new System.Drawing.Size(1077, 93);
             panelBottom.TabIndex = 2;
-            //
+            // 
             // btnCerrar
-            //
-            btnCerrar.Location = new System.Drawing.Point(880, 10);
+            // 
+            btnCerrar.Location = new System.Drawing.Point(843, 10);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new System.Drawing.Size(90, 29);
+            btnCerrar.Size = new System.Drawing.Size(135, 55);
             btnCerrar.TabIndex = 4;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
-            //
+            // 
             // btnDesactivar
-            //
-            btnDesactivar.Location = new System.Drawing.Point(390, 10);
+            // 
+            btnDesactivar.Location = new System.Drawing.Point(520, 10);
             btnDesactivar.Name = "btnDesactivar";
-            btnDesactivar.Size = new System.Drawing.Size(110, 29);
+            btnDesactivar.Size = new System.Drawing.Size(135, 55);
             btnDesactivar.TabIndex = 3;
             btnDesactivar.Text = "Desactivar";
             btnDesactivar.UseVisualStyleBackColor = true;
             btnDesactivar.Click += btnDesactivar_Click;
-            //
+            // 
             // btnCambiarPassword
-            //
-            btnCambiarPassword.Location = new System.Drawing.Point(220, 10);
+            // 
+            btnCambiarPassword.Location = new System.Drawing.Point(306, 10);
             btnCambiarPassword.Name = "btnCambiarPassword";
-            btnCambiarPassword.Size = new System.Drawing.Size(160, 29);
+            btnCambiarPassword.Size = new System.Drawing.Size(195, 56);
             btnCambiarPassword.TabIndex = 2;
             btnCambiarPassword.Text = "Cambiar Contraseña";
             btnCambiarPassword.UseVisualStyleBackColor = true;
             btnCambiarPassword.Click += btnCambiarPassword_Click;
-            //
+            // 
             // btnEditar
-            //
-            btnEditar.Location = new System.Drawing.Point(120, 10);
+            // 
+            btnEditar.Location = new System.Drawing.Point(162, 10);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new System.Drawing.Size(90, 29);
+            btnEditar.Size = new System.Drawing.Size(135, 55);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
             btnEditar.Click += btnEditar_Click;
-            //
+            // 
             // btnNuevo
-            //
+            // 
             btnNuevo.Location = new System.Drawing.Point(16, 10);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new System.Drawing.Size(90, 29);
+            btnNuevo.Size = new System.Drawing.Size(135, 55);
             btnNuevo.TabIndex = 0;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
-            //
+            // 
             // dgvUsuarios
-            //
+            // 
             dgvUsuarios.AllowUserToAddRows = false;
             dgvUsuarios.AllowUserToDeleteRows = false;
             dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colNombreUsuario, colNombreCompleto, colRol, colActivo });
             dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            dgvUsuarios.Location = new System.Drawing.Point(0, 56);
+            dgvUsuarios.Location = new System.Drawing.Point(0, 108);
             dgvUsuarios.MultiSelect = false;
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.ReadOnly = true;
             dgvUsuarios.RowHeadersWidth = 25;
             dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dgvUsuarios.Size = new System.Drawing.Size(984, 355);
+            dgvUsuarios.Size = new System.Drawing.Size(1077, 365);
             dgvUsuarios.TabIndex = 1;
-            //
+            // 
             // colNombreUsuario
-            //
+            // 
             colNombreUsuario.HeaderText = "Usuario";
+            colNombreUsuario.MinimumWidth = 6;
             colNombreUsuario.Name = "colNombreUsuario";
             colNombreUsuario.ReadOnly = true;
             colNombreUsuario.Width = 150;
-            //
+            // 
             // colNombreCompleto
-            //
+            // 
             colNombreCompleto.HeaderText = "Nombre Completo";
+            colNombreCompleto.MinimumWidth = 6;
             colNombreCompleto.Name = "colNombreCompleto";
             colNombreCompleto.ReadOnly = true;
             colNombreCompleto.Width = 250;
-            //
+            // 
             // colRol
-            //
+            // 
             colRol.HeaderText = "Rol";
+            colRol.MinimumWidth = 6;
             colRol.Name = "colRol";
             colRol.ReadOnly = true;
             colRol.Width = 120;
-            //
+            // 
             // colActivo
-            //
+            // 
             colActivo.HeaderText = "Activo";
+            colActivo.MinimumWidth = 6;
             colActivo.Name = "colActivo";
             colActivo.ReadOnly = true;
             colActivo.Width = 60;
-            //
+            // 
             // UsuariosForm
-            //
+            // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(984, 461);
+            ClientSize = new System.Drawing.Size(1077, 566);
             Controls.Add(dgvUsuarios);
             Controls.Add(panelBottom);
             Controls.Add(panelTop);

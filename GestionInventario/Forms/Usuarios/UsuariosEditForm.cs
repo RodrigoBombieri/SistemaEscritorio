@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using GestorInventario.Domain.Enums;
 using Microsoft.Data.SqlClient;
@@ -17,6 +18,7 @@ namespace GestionInventario.Forms.Usuarios
         public UsuarioEditForm(IUsuarioService usuarioService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _usuarioService = usuarioService;
             cmbRol.DataSource = Enum.GetValues(typeof(RolUsuario));
             Load += UsuarioEditForm_Load;

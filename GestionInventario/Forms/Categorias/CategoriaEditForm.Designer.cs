@@ -21,42 +21,42 @@
             btnGuardar = new System.Windows.Forms.Button();
             btnCancelar = new System.Windows.Forms.Button();
             SuspendLayout();
-            //
+            // 
             // lblNombre
-            //
+            // 
             lblNombre.AutoSize = true;
             lblNombre.Location = new System.Drawing.Point(24, 24);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new System.Drawing.Size(69, 20);
+            lblNombre.Size = new System.Drawing.Size(67, 20);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre:";
-            //
+            // 
             // txtNombre
-            //
+            // 
             txtNombre.Location = new System.Drawing.Point(140, 21);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new System.Drawing.Size(300, 27);
             txtNombre.TabIndex = 1;
-            //
+            // 
             // lblDescripcion
-            //
+            // 
             lblDescripcion.AutoSize = true;
             lblDescripcion.Location = new System.Drawing.Point(24, 61);
             lblDescripcion.Name = "lblDescripcion";
-            lblDescripcion.Size = new System.Drawing.Size(98, 20);
+            lblDescripcion.Size = new System.Drawing.Size(90, 20);
             lblDescripcion.TabIndex = 2;
             lblDescripcion.Text = "Descripción:";
-            //
+            // 
             // txtDescripcion
-            //
+            // 
             txtDescripcion.Location = new System.Drawing.Point(140, 58);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new System.Drawing.Size(300, 80);
             txtDescripcion.TabIndex = 3;
-            //
+            // 
             // lblError
-            //
+            // 
             lblError.AutoSize = true;
             lblError.ForeColor = System.Drawing.Color.Red;
             lblError.Location = new System.Drawing.Point(24, 155);
@@ -66,34 +66,34 @@
             lblError.TabIndex = 4;
             lblError.Text = "Error";
             lblError.Visible = false;
-            //
+            // 
             // btnGuardar
-            //
-            btnGuardar.Location = new System.Drawing.Point(270, 200);
+            // 
+            btnGuardar.Location = new System.Drawing.Point(164, 200);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new System.Drawing.Size(85, 29);
+            btnGuardar.Size = new System.Drawing.Size(135, 55);
             btnGuardar.TabIndex = 5;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
-            //
+            // 
             // btnCancelar
-            //
-            btnCancelar.Location = new System.Drawing.Point(365, 200);
+            // 
+            btnCancelar.Location = new System.Drawing.Point(305, 200);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new System.Drawing.Size(85, 29);
+            btnCancelar.Size = new System.Drawing.Size(135, 55);
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
-            //
+            // 
             // CategoriaEditForm
-            //
+            // 
             AcceptButton = btnGuardar;
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = btnCancelar;
-            ClientSize = new System.Drawing.Size(464, 251);
+            ClientSize = new System.Drawing.Size(544, 375);
             Controls.Add(lblNombre);
             Controls.Add(txtNombre);
             Controls.Add(lblDescripcion);

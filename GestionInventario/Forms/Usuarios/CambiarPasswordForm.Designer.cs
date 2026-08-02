@@ -22,53 +22,53 @@
             btnGuardar = new System.Windows.Forms.Button();
             btnCancelar = new System.Windows.Forms.Button();
             SuspendLayout();
-            //
+            // 
             // lblUsuario
-            //
+            // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             lblUsuario.Location = new System.Drawing.Point(24, 20);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new System.Drawing.Size(120, 20);
+            lblUsuario.Size = new System.Drawing.Size(71, 20);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuario: ";
-            //
+            // 
             // lblPassword
-            //
+            // 
             lblPassword.AutoSize = true;
             lblPassword.Location = new System.Drawing.Point(24, 60);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new System.Drawing.Size(146, 20);
+            lblPassword.Size = new System.Drawing.Size(132, 20);
             lblPassword.TabIndex = 1;
             lblPassword.Text = "Nueva Contraseña:";
-            //
+            // 
             // txtPassword
-            //
+            // 
             txtPassword.Location = new System.Drawing.Point(24, 83);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '●';
             txtPassword.Size = new System.Drawing.Size(280, 27);
             txtPassword.TabIndex = 2;
-            //
+            // 
             // lblConfirmarPassword
-            //
+            // 
             lblConfirmarPassword.AutoSize = true;
             lblConfirmarPassword.Location = new System.Drawing.Point(24, 120);
             lblConfirmarPassword.Name = "lblConfirmarPassword";
-            lblConfirmarPassword.Size = new System.Drawing.Size(150, 20);
+            lblConfirmarPassword.Size = new System.Drawing.Size(156, 20);
             lblConfirmarPassword.TabIndex = 3;
             lblConfirmarPassword.Text = "Confirmar Contraseña:";
-            //
+            // 
             // txtConfirmarPassword
-            //
+            // 
             txtConfirmarPassword.Location = new System.Drawing.Point(24, 143);
             txtConfirmarPassword.Name = "txtConfirmarPassword";
             txtConfirmarPassword.PasswordChar = '●';
             txtConfirmarPassword.Size = new System.Drawing.Size(280, 27);
             txtConfirmarPassword.TabIndex = 4;
-            //
+            // 
             // lblError
-            //
+            // 
             lblError.AutoSize = true;
             lblError.ForeColor = System.Drawing.Color.Red;
             lblError.Location = new System.Drawing.Point(24, 180);
@@ -78,34 +78,34 @@
             lblError.TabIndex = 5;
             lblError.Text = "Error";
             lblError.Visible = false;
-            //
+            // 
             // btnGuardar
-            //
-            btnGuardar.Location = new System.Drawing.Point(120, 225);
+            // 
+            btnGuardar.Location = new System.Drawing.Point(24, 225);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new System.Drawing.Size(85, 29);
+            btnGuardar.Size = new System.Drawing.Size(135, 55);
             btnGuardar.TabIndex = 6;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
-            //
+            // 
             // btnCancelar
-            //
-            btnCancelar.Location = new System.Drawing.Point(215, 225);
+            // 
+            btnCancelar.Location = new System.Drawing.Point(169, 225);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new System.Drawing.Size(85, 29);
+            btnCancelar.Size = new System.Drawing.Size(135, 55);
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
-            //
+            // 
             // CambiarPasswordForm
-            //
+            // 
             AcceptButton = btnGuardar;
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = btnCancelar;
-            ClientSize = new System.Drawing.Size(330, 276);
+            ClientSize = new System.Drawing.Size(491, 374);
             Controls.Add(lblUsuario);
             Controls.Add(lblPassword);
             Controls.Add(txtPassword);

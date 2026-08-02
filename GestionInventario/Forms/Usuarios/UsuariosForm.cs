@@ -18,6 +18,7 @@ namespace GestionInventario.Forms.Usuarios
         public UsuariosForm(IUsuarioService usuarioService, IServiceScopeFactory scopeFactory)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioListado(this);
             _usuarioService = usuarioService;
             _scopeFactory = scopeFactory;
             Load += UsuariosForm_Load;
@@ -51,6 +52,9 @@ namespace GestionInventario.Forms.Usuarios
                     var idx = dgvUsuarios.Rows.Add(u.NombreUsuario, u.NombreCompleto, u.Rol.ToString(), u.Activo ? "Sí" : "No");
                     dgvUsuarios.Rows[idx].Tag = u;
                 }
+
+                dgvUsuarios.ClearSelection();
+                dgvUsuarios.CurrentCell = null;
             }
             catch (Exception ex)
             {

@@ -48,14 +48,14 @@
             panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             panelTop.Location = new System.Drawing.Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new System.Drawing.Size(984, 56);
+            panelTop.Size = new System.Drawing.Size(1076, 100);
             panelTop.TabIndex = 0;
             // 
             // btnRefrescar
             // 
-            btnRefrescar.Location = new System.Drawing.Point(700, 16);
+            btnRefrescar.Location = new System.Drawing.Point(826, 16);
             btnRefrescar.Name = "btnRefrescar";
-            btnRefrescar.Size = new System.Drawing.Size(100, 29);
+            btnRefrescar.Size = new System.Drawing.Size(135, 55);
             btnRefrescar.TabIndex = 5;
             btnRefrescar.Text = "Refrescar";
             btnRefrescar.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             chkSoloActivos.AutoSize = true;
             chkSoloActivos.Checked = true;
             chkSoloActivos.CheckState = System.Windows.Forms.CheckState.Checked;
-            chkSoloActivos.Location = new System.Drawing.Point(500, 20);
+            chkSoloActivos.Location = new System.Drawing.Point(583, 32);
             chkSoloActivos.Name = "chkSoloActivos";
             chkSoloActivos.Size = new System.Drawing.Size(111, 24);
             chkSoloActivos.TabIndex = 4;
@@ -75,9 +75,9 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new System.Drawing.Point(340, 16);
+            btnBuscar.Location = new System.Drawing.Point(371, 16);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new System.Drawing.Size(75, 29);
+            btnBuscar.Size = new System.Drawing.Size(135, 55);
             btnBuscar.TabIndex = 3;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new System.Drawing.Point(180, 17);
+            txtBuscar.Location = new System.Drawing.Point(202, 29);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new System.Drawing.Size(150, 27);
             txtBuscar.TabIndex = 2;
@@ -93,7 +93,7 @@
             // lblBuscar
             // 
             lblBuscar.AutoSize = true;
-            lblBuscar.Location = new System.Drawing.Point(120, 20);
+            lblBuscar.Location = new System.Drawing.Point(141, 33);
             lblBuscar.Name = "lblBuscar";
             lblBuscar.Size = new System.Drawing.Size(55, 20);
             lblBuscar.TabIndex = 1;
@@ -103,7 +103,7 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblTitulo.Location = new System.Drawing.Point(16, 20);
+            lblTitulo.Location = new System.Drawing.Point(12, 29);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new System.Drawing.Size(96, 20);
             lblTitulo.TabIndex = 0;
@@ -116,16 +116,16 @@
             panelBottom.Controls.Add(btnEditar);
             panelBottom.Controls.Add(btnNuevo);
             panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panelBottom.Location = new System.Drawing.Point(0, 411);
+            panelBottom.Location = new System.Drawing.Point(0, 485);
             panelBottom.Name = "panelBottom";
-            panelBottom.Size = new System.Drawing.Size(984, 50);
+            panelBottom.Size = new System.Drawing.Size(1076, 91);
             panelBottom.TabIndex = 2;
             // 
             // btnCerrar
             // 
-            btnCerrar.Location = new System.Drawing.Point(880, 10);
+            btnCerrar.Location = new System.Drawing.Point(826, 10);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new System.Drawing.Size(90, 29);
+            btnCerrar.Size = new System.Drawing.Size(135, 55);
             btnCerrar.TabIndex = 3;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
@@ -133,9 +133,9 @@
             // 
             // btnDesactivar
             // 
-            btnDesactivar.Location = new System.Drawing.Point(230, 10);
+            btnDesactivar.Location = new System.Drawing.Point(322, 10);
             btnDesactivar.Name = "btnDesactivar";
-            btnDesactivar.Size = new System.Drawing.Size(110, 29);
+            btnDesactivar.Size = new System.Drawing.Size(135, 55);
             btnDesactivar.TabIndex = 2;
             btnDesactivar.Text = "Desactivar";
             btnDesactivar.UseVisualStyleBackColor = true;
@@ -143,9 +143,9 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new System.Drawing.Point(120, 10);
+            btnEditar.Location = new System.Drawing.Point(163, 10);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new System.Drawing.Size(90, 29);
+            btnEditar.Size = new System.Drawing.Size(135, 55);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new System.Drawing.Point(16, 10);
+            btnNuevo.Location = new System.Drawing.Point(18, 10);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new System.Drawing.Size(90, 29);
+            btnNuevo.Size = new System.Drawing.Size(135, 55);
             btnNuevo.TabIndex = 0;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
@@ -168,13 +168,13 @@
             dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProveedores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colRazonSocial, colCUIT, colTelefono, colEmail, colDireccion, colActivo });
             dgvProveedores.Dock = System.Windows.Forms.DockStyle.Fill;
-            dgvProveedores.Location = new System.Drawing.Point(0, 56);
+            dgvProveedores.Location = new System.Drawing.Point(0, 100);
             dgvProveedores.MultiSelect = false;
             dgvProveedores.Name = "dgvProveedores";
             dgvProveedores.ReadOnly = true;
             dgvProveedores.RowHeadersWidth = 25;
             dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dgvProveedores.Size = new System.Drawing.Size(984, 355);
+            dgvProveedores.Size = new System.Drawing.Size(1076, 385);
             dgvProveedores.TabIndex = 1;
             dgvProveedores.Click += chkSoloActivos_CheckedChanged;
             // 
@@ -230,7 +230,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(984, 461);
+            ClientSize = new System.Drawing.Size(1076, 576);
             Controls.Add(dgvProveedores);
             Controls.Add(panelBottom);
             Controls.Add(panelTop);

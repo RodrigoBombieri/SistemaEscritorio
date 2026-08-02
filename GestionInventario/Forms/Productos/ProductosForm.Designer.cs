@@ -40,9 +40,9 @@
             panelBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
-            //
+            // 
             // panelTop
-            //
+            // 
             panelTop.Controls.Add(btnRefrescar);
             panelTop.Controls.Add(chkSoloStockBajo);
             panelTop.Controls.Add(cmbCategoria);
@@ -54,213 +54,221 @@
             panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             panelTop.Location = new System.Drawing.Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new System.Drawing.Size(984, 56);
+            panelTop.Size = new System.Drawing.Size(1083, 87);
             panelTop.TabIndex = 0;
-            //
+            // 
             // btnRefrescar
-            //
-            btnRefrescar.Location = new System.Drawing.Point(860, 16);
+            // 
+            btnRefrescar.Location = new System.Drawing.Point(883, 23);
             btnRefrescar.Name = "btnRefrescar";
-            btnRefrescar.Size = new System.Drawing.Size(100, 29);
+            btnRefrescar.Size = new System.Drawing.Size(135, 55);
             btnRefrescar.TabIndex = 7;
             btnRefrescar.Text = "Refrescar";
             btnRefrescar.UseVisualStyleBackColor = true;
             btnRefrescar.Click += btnRefrescar_Click;
-            //
+            // 
             // chkSoloStockBajo
-            //
+            // 
             chkSoloStockBajo.AutoSize = true;
-            chkSoloStockBajo.Location = new System.Drawing.Point(650, 20);
+            chkSoloStockBajo.Location = new System.Drawing.Point(730, 39);
             chkSoloStockBajo.Name = "chkSoloStockBajo";
-            chkSoloStockBajo.Size = new System.Drawing.Size(130, 24);
+            chkSoloStockBajo.Size = new System.Drawing.Size(133, 24);
             chkSoloStockBajo.TabIndex = 6;
             chkSoloStockBajo.Text = "Solo stock bajo";
             chkSoloStockBajo.UseVisualStyleBackColor = true;
             chkSoloStockBajo.CheckedChanged += chkSoloStockBajo_CheckedChanged;
-            //
+            // 
             // cmbCategoria
-            //
+            // 
             cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cmbCategoria.Location = new System.Drawing.Point(500, 17);
+            cmbCategoria.Location = new System.Drawing.Point(573, 37);
             cmbCategoria.Name = "cmbCategoria";
             cmbCategoria.Size = new System.Drawing.Size(140, 28);
             cmbCategoria.TabIndex = 5;
             cmbCategoria.SelectedIndexChanged += cmbCategoria_SelectedIndexChanged;
-            //
+            // 
             // lblCategoria
-            //
+            // 
             lblCategoria.AutoSize = true;
-            lblCategoria.Location = new System.Drawing.Point(425, 20);
+            lblCategoria.Location = new System.Drawing.Point(490, 43);
             lblCategoria.Name = "lblCategoria";
-            lblCategoria.Size = new System.Drawing.Size(76, 20);
+            lblCategoria.Size = new System.Drawing.Size(77, 20);
             lblCategoria.TabIndex = 4;
             lblCategoria.Text = "Categoría:";
-            //
+            // 
             // btnBuscar
-            //
-            btnBuscar.Location = new System.Drawing.Point(340, 16);
+            // 
+            btnBuscar.Location = new System.Drawing.Point(337, 23);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new System.Drawing.Size(75, 29);
+            btnBuscar.Size = new System.Drawing.Size(135, 55);
             btnBuscar.TabIndex = 3;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             btnBuscar.Click += btnBuscar_Click;
-            //
+            // 
             // txtBuscar
-            //
-            txtBuscar.Location = new System.Drawing.Point(180, 17);
+            // 
+            txtBuscar.Location = new System.Drawing.Point(181, 40);
             txtBuscar.Name = "txtBuscar";
             txtBuscar.Size = new System.Drawing.Size(150, 27);
             txtBuscar.TabIndex = 2;
-            //
+            // 
             // lblBuscar
-            //
+            // 
             lblBuscar.AutoSize = true;
-            lblBuscar.Location = new System.Drawing.Point(120, 20);
+            lblBuscar.Location = new System.Drawing.Point(120, 43);
             lblBuscar.Name = "lblBuscar";
-            lblBuscar.Size = new System.Drawing.Size(58, 20);
+            lblBuscar.Size = new System.Drawing.Size(55, 20);
             lblBuscar.TabIndex = 1;
             lblBuscar.Text = "Buscar:";
-            //
+            // 
             // lblTitulo
-            //
+            // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lblTitulo.Location = new System.Drawing.Point(16, 20);
+            lblTitulo.Location = new System.Drawing.Point(12, 43);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new System.Drawing.Size(90, 20);
+            lblTitulo.Size = new System.Drawing.Size(80, 20);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Productos";
-            //
+            // 
             // panelBottom
-            //
+            // 
             panelBottom.Controls.Add(btnCerrar);
             panelBottom.Controls.Add(btnDesactivar);
             panelBottom.Controls.Add(btnEditar);
             panelBottom.Controls.Add(btnNuevo);
             panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panelBottom.Location = new System.Drawing.Point(0, 511);
+            panelBottom.Location = new System.Drawing.Point(0, 504);
             panelBottom.Name = "panelBottom";
-            panelBottom.Size = new System.Drawing.Size(984, 50);
+            panelBottom.Size = new System.Drawing.Size(1083, 96);
             panelBottom.TabIndex = 2;
-            //
+            // 
             // btnCerrar
-            //
-            btnCerrar.Location = new System.Drawing.Point(880, 10);
+            // 
+            btnCerrar.Location = new System.Drawing.Point(883, 19);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new System.Drawing.Size(90, 29);
+            btnCerrar.Size = new System.Drawing.Size(135, 55);
             btnCerrar.TabIndex = 3;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Click += btnCerrar_Click;
-            //
+            // 
             // btnDesactivar
-            //
-            btnDesactivar.Location = new System.Drawing.Point(230, 10);
+            // 
+            btnDesactivar.Location = new System.Drawing.Point(322, 19);
             btnDesactivar.Name = "btnDesactivar";
-            btnDesactivar.Size = new System.Drawing.Size(110, 29);
+            btnDesactivar.Size = new System.Drawing.Size(135, 55);
             btnDesactivar.TabIndex = 2;
             btnDesactivar.Text = "Desactivar";
             btnDesactivar.UseVisualStyleBackColor = true;
             btnDesactivar.Click += btnDesactivar_Click;
-            //
+            // 
             // btnEditar
-            //
-            btnEditar.Location = new System.Drawing.Point(120, 10);
+            // 
+            btnEditar.Location = new System.Drawing.Point(163, 19);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new System.Drawing.Size(90, 29);
+            btnEditar.Size = new System.Drawing.Size(135, 55);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
             btnEditar.Click += btnEditar_Click;
-            //
+            // 
             // btnNuevo
-            //
-            btnNuevo.Location = new System.Drawing.Point(16, 10);
+            // 
+            btnNuevo.Location = new System.Drawing.Point(12, 19);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new System.Drawing.Size(90, 29);
+            btnNuevo.Size = new System.Drawing.Size(135, 55);
             btnNuevo.TabIndex = 0;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
             btnNuevo.Click += btnNuevo_Click;
-            //
+            // 
             // dgvProductos
-            //
+            // 
             dgvProductos.AllowUserToAddRows = false;
             dgvProductos.AllowUserToDeleteRows = false;
             dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colCodigo, colNombre, colCategoria, colProveedor, colPrecioVenta, colStockActual, colStockMinimo, colActivo });
             dgvProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            dgvProductos.Location = new System.Drawing.Point(0, 56);
+            dgvProductos.Location = new System.Drawing.Point(0, 87);
             dgvProductos.MultiSelect = false;
             dgvProductos.Name = "dgvProductos";
             dgvProductos.ReadOnly = true;
             dgvProductos.RowHeadersWidth = 25;
             dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            dgvProductos.Size = new System.Drawing.Size(984, 455);
+            dgvProductos.Size = new System.Drawing.Size(1083, 417);
             dgvProductos.TabIndex = 1;
-            //
+            // 
             // colCodigo
-            //
+            // 
             colCodigo.HeaderText = "Código";
+            colCodigo.MinimumWidth = 6;
             colCodigo.Name = "colCodigo";
             colCodigo.ReadOnly = true;
-            colCodigo.Width = 100;
-            //
+            colCodigo.Width = 125;
+            // 
             // colNombre
-            //
+            // 
             colNombre.HeaderText = "Nombre";
+            colNombre.MinimumWidth = 6;
             colNombre.Name = "colNombre";
             colNombre.ReadOnly = true;
             colNombre.Width = 200;
-            //
+            // 
             // colCategoria
-            //
+            // 
             colCategoria.HeaderText = "Categoría";
+            colCategoria.MinimumWidth = 6;
             colCategoria.Name = "colCategoria";
             colCategoria.ReadOnly = true;
             colCategoria.Width = 130;
-            //
+            // 
             // colProveedor
-            //
+            // 
             colProveedor.HeaderText = "Proveedor";
+            colProveedor.MinimumWidth = 6;
             colProveedor.Name = "colProveedor";
             colProveedor.ReadOnly = true;
             colProveedor.Width = 160;
-            //
+            // 
             // colPrecioVenta
-            //
+            // 
             colPrecioVenta.HeaderText = "Precio Venta";
+            colPrecioVenta.MinimumWidth = 6;
             colPrecioVenta.Name = "colPrecioVenta";
             colPrecioVenta.ReadOnly = true;
-            colPrecioVenta.Width = 100;
-            //
+            colPrecioVenta.Width = 125;
+            // 
             // colStockActual
-            //
+            // 
             colStockActual.HeaderText = "Stock";
+            colStockActual.MinimumWidth = 6;
             colStockActual.Name = "colStockActual";
             colStockActual.ReadOnly = true;
             colStockActual.Width = 70;
-            //
+            // 
             // colStockMinimo
-            //
+            // 
             colStockMinimo.HeaderText = "Stock Mín.";
+            colStockMinimo.MinimumWidth = 6;
             colStockMinimo.Name = "colStockMinimo";
             colStockMinimo.ReadOnly = true;
             colStockMinimo.Width = 80;
-            //
+            // 
             // colActivo
-            //
+            // 
             colActivo.HeaderText = "Activo";
+            colActivo.MinimumWidth = 6;
             colActivo.Name = "colActivo";
             colActivo.ReadOnly = true;
             colActivo.Width = 60;
-            //
+            // 
             // ProductosForm
-            //
+            // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(984, 561);
+            ClientSize = new System.Drawing.Size(1083, 600);
             Controls.Add(dgvProductos);
             Controls.Add(panelBottom);
             Controls.Add(panelTop);

@@ -58,14 +58,14 @@
             panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             panelTop.Location = new System.Drawing.Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new System.Drawing.Size(800, 44);
+            panelTop.Size = new System.Drawing.Size(1059, 63);
             panelTop.TabIndex = 1;
             // 
             // btnCerrarSesion
             // 
-            btnCerrarSesion.Location = new System.Drawing.Point(659, 12);
+            btnCerrarSesion.Location = new System.Drawing.Point(870, 12);
             btnCerrarSesion.Name = "btnCerrarSesion";
-            btnCerrarSesion.Size = new System.Drawing.Size(129, 29);
+            btnCerrarSesion.Size = new System.Drawing.Size(164, 48);
             btnCerrarSesion.TabIndex = 2;
             btnCerrarSesion.Text = "Cerrar Sesión";
             btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             panelMenu.Controls.Add(flowMenu);
             panelMenu.Controls.Add(btnSalir);
             panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            panelMenu.Location = new System.Drawing.Point(0, 44);
+            panelMenu.Location = new System.Drawing.Point(0, 63);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new System.Drawing.Size(170, 406);
+            panelMenu.Size = new System.Drawing.Size(170, 517);
             panelMenu.TabIndex = 2;
             // 
             // flowMenu
@@ -110,7 +110,7 @@
             flowMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             flowMenu.Location = new System.Drawing.Point(0, 0);
             flowMenu.Name = "flowMenu";
-            flowMenu.Size = new System.Drawing.Size(170, 377);
+            flowMenu.Size = new System.Drawing.Size(170, 488);
             flowMenu.TabIndex = 1;
             flowMenu.WrapContents = false;
             // 
@@ -119,7 +119,7 @@
             btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnProductos.Location = new System.Drawing.Point(3, 3);
             btnProductos.Name = "btnProductos";
-            btnProductos.Size = new System.Drawing.Size(109, 29);
+            btnProductos.Size = new System.Drawing.Size(145, 45);
             btnProductos.TabIndex = 0;
             btnProductos.Text = "Productos";
             btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,9 +129,9 @@
             // btnCategorias
             // 
             btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnCategorias.Location = new System.Drawing.Point(3, 38);
+            btnCategorias.Location = new System.Drawing.Point(3, 54);
             btnCategorias.Name = "btnCategorias";
-            btnCategorias.Size = new System.Drawing.Size(109, 29);
+            btnCategorias.Size = new System.Drawing.Size(145, 45);
             btnCategorias.TabIndex = 1;
             btnCategorias.Text = "Categorías";
             btnCategorias.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,9 +141,9 @@
             // btnProveedores
             // 
             btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnProveedores.Location = new System.Drawing.Point(3, 73);
+            btnProveedores.Location = new System.Drawing.Point(3, 105);
             btnProveedores.Name = "btnProveedores";
-            btnProveedores.Size = new System.Drawing.Size(109, 29);
+            btnProveedores.Size = new System.Drawing.Size(145, 45);
             btnProveedores.TabIndex = 2;
             btnProveedores.Text = "Proveedores";
             btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,9 +153,9 @@
             // btnMovimientos
             // 
             btnMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnMovimientos.Location = new System.Drawing.Point(3, 108);
+            btnMovimientos.Location = new System.Drawing.Point(3, 156);
             btnMovimientos.Name = "btnMovimientos";
-            btnMovimientos.Size = new System.Drawing.Size(109, 29);
+            btnMovimientos.Size = new System.Drawing.Size(145, 45);
             btnMovimientos.TabIndex = 3;
             btnMovimientos.Text = "Movimientos";
             btnMovimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,9 +164,9 @@
             // btnUsuarios
             // 
             btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnUsuarios.Location = new System.Drawing.Point(3, 143);
+            btnUsuarios.Location = new System.Drawing.Point(3, 207);
             btnUsuarios.Name = "btnUsuarios";
-            btnUsuarios.Size = new System.Drawing.Size(109, 29);
+            btnUsuarios.Size = new System.Drawing.Size(145, 45);
             btnUsuarios.TabIndex = 4;
             btnUsuarios.Text = "Usuarios";
             btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -176,7 +176,7 @@
             // btnSalir
             // 
             btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
-            btnSalir.Location = new System.Drawing.Point(0, 377);
+            btnSalir.Location = new System.Drawing.Point(0, 488);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new System.Drawing.Size(170, 29);
             btnSalir.TabIndex = 0;
@@ -187,9 +187,9 @@
             // 
             statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { tsslUsuario, toolStripStatusLabel1, tsslVersion });
-            statusStrip1.Location = new System.Drawing.Point(170, 424);
+            statusStrip1.Location = new System.Drawing.Point(170, 554);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new System.Drawing.Size(630, 26);
+            statusStrip1.Size = new System.Drawing.Size(889, 26);
             statusStrip1.TabIndex = 3;
             statusStrip1.Text = "statusStrip1";
             // 
@@ -202,7 +202,7 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new System.Drawing.Size(401, 20);
+            toolStripStatusLabel1.Size = new System.Drawing.Size(660, 20);
             toolStripStatusLabel1.Spring = true;
             // 
             // tsslVersion
@@ -215,7 +215,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(1059, 580);
             Controls.Add(statusStrip1);
             Controls.Add(panelMenu);
             Controls.Add(panelTop);

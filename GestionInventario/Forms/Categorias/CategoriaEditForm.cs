@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using Microsoft.Data.SqlClient;
 using System;
@@ -16,6 +17,7 @@ namespace GestionInventario.Forms.Categorias
         public CategoriaEditForm(ICategoriaService categoriaService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _categoriaService = categoriaService;
             Load += CategoriaEditForm_Load;
         }

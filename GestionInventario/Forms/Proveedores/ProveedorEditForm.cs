@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace GestionInventario.Forms.Proveedores
         public ProveedorEditForm(IProveedorService proveedorService)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioModal(this);
             _proveedorService = proveedorService;
             Load += ProveedorEditForm_Load;
         }

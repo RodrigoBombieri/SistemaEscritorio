@@ -1,4 +1,5 @@
-﻿using GestorInventario.Application.Interfaces;
+﻿using GestionInventario.Helpers;
+using GestorInventario.Application.Interfaces;
 using GestorInventario.Domain.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,6 +18,7 @@ namespace GestionInventario.Forms.Categorias
         public CategoriasForm(ICategoriaService categoriaService, IServiceScopeFactory scopeFactory)
         {
             InitializeComponent();
+            UiStyler.EstilizarFormularioListado(this);
             _categoriaService = categoriaService;
             _scopeFactory = scopeFactory;
             Load += CategoriasForm_Load;
@@ -45,6 +47,9 @@ namespace GestionInventario.Forms.Categorias
                     var idx = dgvCategorias.Rows.Add(c.Nombre, c.Descripcion);
                     dgvCategorias.Rows[idx].Tag = c;
                 }
+
+                dgvCategorias.ClearSelection();
+                dgvCategorias.CurrentCell = null;
             }
             finally
             {

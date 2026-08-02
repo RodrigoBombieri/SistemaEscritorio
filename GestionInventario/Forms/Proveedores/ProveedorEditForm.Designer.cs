@@ -123,9 +123,9 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new System.Drawing.Point(290, 290);
+            btnGuardar.Location = new System.Drawing.Point(175, 290);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new System.Drawing.Size(85, 29);
+            btnGuardar.Size = new System.Drawing.Size(135, 55);
             btnGuardar.TabIndex = 11;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -133,9 +133,9 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new System.Drawing.Point(385, 290);
+            btnCancelar.Location = new System.Drawing.Point(325, 290);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new System.Drawing.Size(85, 29);
+            btnCancelar.Size = new System.Drawing.Size(135, 55);
             btnCancelar.TabIndex = 12;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -147,7 +147,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = btnCancelar;
-            ClientSize = new System.Drawing.Size(494, 341);
+            ClientSize = new System.Drawing.Size(505, 389);
             Controls.Add(lblRazonSocial);
             Controls.Add(txtRazonSocial);
             Controls.Add(lblCUIT);

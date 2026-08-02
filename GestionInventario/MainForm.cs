@@ -17,6 +17,7 @@ namespace GestionInventario
         public MainForm(IServiceScopeFactory scopeFactory)
         {
             InitializeComponent();
+            UiStyler.EstilizarVentanaPrincipal(this);
             _scopeFactory = scopeFactory;
             Load += MainForm_Load;
         }
@@ -56,8 +57,6 @@ namespace GestionInventario
 
         }
 
-        // Cuando construyamos cada pantalla, reemplazamos el MessageBox de arriba por:
-        // AbrirFormularioHijo<Forms.Productos.ProductosForm>();
         private void AbrirFormularioHijo<TForm>() where TForm : Form
         {
             var scope = _scopeFactory.CreateScope();
