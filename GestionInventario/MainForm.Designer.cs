@@ -148,6 +148,7 @@
             btnProveedores.Text = "Proveedores";
             btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnProveedores.UseVisualStyleBackColor = true;
+            btnProveedores.Click += btnProveedores_Click;
             // 
             // btnMovimientos
             // 
