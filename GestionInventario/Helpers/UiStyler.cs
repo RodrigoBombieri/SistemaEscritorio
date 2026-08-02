@@ -157,9 +157,9 @@ namespace GestionInventario.Helpers
         {
             var nombre = boton.Name.ToLowerInvariant();
 
-            if (nombre.Contains("nuevo") || nombre.Contains("guardar") || nombre.Contains("ingresar"))
+            if (nombre.Contains("nuevo") || nombre.Contains("guardar") || nombre.Contains("ingresar") || nombre.Contains("entrada"))
                 EstilizarBotonPrimario(boton);
-            else if (nombre.Contains("desactivar") || nombre.Contains("eliminar"))
+            else if (nombre.Contains("desactivar") || nombre.Contains("eliminar") || nombre.Contains("salida"))
                 EstilizarBotonPeligro(boton);
             else
                 EstilizarBotonSecundario(boton);
@@ -274,6 +274,9 @@ namespace GestionInventario.Helpers
             ("editar", ''),
             ("desactivar", ''),
             ("eliminar", ''),
+            ("entrada", ''),
+            ("salida", ''),
+            ("ajuste", ''),
             ("buscar", ''),
             ("refrescar", ''),
             ("cancelar", ''),

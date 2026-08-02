@@ -25,6 +25,7 @@ namespace GestorInventario.Infrastructure.Repositories
         public async Task<IEnumerable<MovimientoStock>> GetByProductoAsync(int productoId)
         {
             return await _dbSet
+                .Include(m => m.Producto)
                 .Include(m => m.Usuario)
                 .Where(m => m.ProductoId == productoId)
                 .OrderByDescending(m => m.Fecha)

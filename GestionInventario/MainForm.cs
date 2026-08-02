@@ -1,4 +1,5 @@
 ﻿using GestionInventario.Forms.Categorias;
+using GestionInventario.Forms.Movimientos;
 using GestionInventario.Forms.Productos;
 using GestionInventario.Forms.Proveedores;
 using GestionInventario.Forms.Usuarios;
@@ -41,7 +42,7 @@ namespace GestionInventario
             => AbrirFormularioHijo<ProveedoresForm>();
 
         private void btnMovimientos_Click(object sender, EventArgs e)
-            => MessageBox.Show("Pantalla de Movimientos: próximo paso.");
+            => AbrirFormularioHijo<MovimientosForm>();
 
         private void btnUsuarios_Click(object sender, EventArgs e)
             => AbrirFormularioHijo<UsuariosForm>();

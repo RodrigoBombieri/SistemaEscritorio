@@ -160,6 +160,7 @@
             btnMovimientos.Text = "Movimientos";
             btnMovimientos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnMovimientos.UseVisualStyleBackColor = true;
+            btnMovimientos.Click += btnMovimientos_Click;
             // 
             // btnUsuarios
             // 
@@ -222,7 +223,6 @@
             IsMdiContainer = true;
             Name = "MainForm";
             Text = "Gestión de Inventario";
-            WindowState = System.Windows.Forms.FormWindowState.Minimized;
             Load += MainForm_Load_1;
             panelTop.ResumeLayout(false);
             panelTop.PerformLayout();

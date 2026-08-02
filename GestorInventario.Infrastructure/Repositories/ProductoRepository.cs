@@ -40,6 +40,7 @@ namespace GestorInventario.Infrastructure.Repositories
         {
             return await _dbSet
                 .Include(p => p.Categoria)
+                .Include(p => p.Proveedor)
                 .Where(p => p.Activo && p.StockActual <= p.StockMinimo)
                 .ToListAsync();
         }
@@ -47,6 +48,7 @@ namespace GestorInventario.Infrastructure.Repositories
         public async Task<IEnumerable<Producto>> GetByCategoriaAsync(int categoriaId)
         {
             return await _dbSet
+                .Include(p => p.Categoria)
                 .Include(p => p.Proveedor)
                 .Where(p => p.CategoriaId == categoriaId)
                 .ToListAsync();

@@ -1,5 +1,6 @@
 ﻿using GestionInventario.Forms.Categorias;
 using GestionInventario.Forms.Login;
+using GestionInventario.Forms.Movimientos;
 using GestionInventario.Forms.Productos;
 using GestionInventario.Forms.Proveedores;
 using GestionInventario.Forms.Usuarios;
@@ -12,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Configuration;
+using System.IO;
 using System.Windows.Forms;
 
 namespace GestionInventario
@@ -21,6 +23,13 @@ namespace GestionInventario
         [STAThread]
         static void Main()
         {
+            // Manejo global de excepciones no controladas: en vez de que la app se cierre
+            // de golpe (o muestre la pantalla fea de .NET), se loguea a disco y se avisa
+            // con un mensaje entendible. Tiene que registrarse antes de EnableVisualStyles/Run.
+            Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+            Application.ThreadException += (sender, e) => RegistrarYMostrarError(e.Exception);
+            AppDomain.CurrentDomain.UnhandledException += (sender, e) => RegistrarYMostrarError(e.ExceptionObject as Exception);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -57,6 +66,8 @@ namespace GestionInventario
             services.AddScoped<UsuariosForm>();
             services.AddScoped<UsuarioEditForm>();
             services.AddScoped<CambiarPasswordForm>();
+            services.AddScoped<MovimientosForm>();
+            services.AddScoped<RegistrarMovimientoForm>();
 
             using var provider = services.BuildServiceProvider();
             // Mostrar el formulario de inicio de sesión antes de abrir el formulario principal
@@ -69,6 +80,29 @@ namespace GestionInventario
             // Abrir el formulario principal después de un inicio de sesión exitoso
             var mainForm = provider.GetRequiredService<MainForm>();
             Application.Run(mainForm);
+        }
+
+        private static void RegistrarYMostrarError(Exception ex)
+        {
+            try
+            {
+                var carpetaLogs = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Logs");
+                Directory.CreateDirectory(carpetaLogs);
+
+                var archivo = Path.Combine(carpetaLogs, $"errores_{DateTime.Now:yyyyMMdd}.log");
+                File.AppendAllText(archivo, $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {ex}{Environment.NewLine}{Environment.NewLine}");
+            }
+            catch
+            {
+                // Si ni siquiera se puede escribir el log, no hay mucho más para hacer acá;
+                // igual le mostramos el error al usuario más abajo.
+            }
+
+            MessageBox.Show(
+                $"Ocurrió un error inesperado y fue registrado en la carpeta Logs.\n\nDetalle: {ex?.Message}",
+                "Error inesperado",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
         }
     }
 }
